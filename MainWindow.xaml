@@ -1,0 +1,30 @@
+﻿<Window x:Class="PracticaClase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:control="clr-namespace:PracticaClase.Uscontrol"
+        mc:Ignorable="d"
+        Title="Clases" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0">
+            <ItemsControl ItemsSource="{Binding Asignaturas}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <control:CardAsignatura Nombre="{Binding Nombre}" Descripcion="{Binding Descripcion}" Carreras="{Binding Carreras}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        
+        <Button Grid.Row="1"
+         Content="MOSTRAR"
+         Margin="0,15,0,15"
+         HorizontalAlignment="Center" Command="{Binding GetAllCommand}" Background="#FF5AEE1E" FontWeight="Bold"/>
+    </Grid>
+</Window>
