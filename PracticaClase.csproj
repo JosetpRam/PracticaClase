@@ -9,7 +9,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="-person_90382.ico" />
+    <None Remove="calendar_105178.ico" />
+    <None Remove="checkform_85890.ico" />
+    <None Remove="folder_89347.ico" />
+    <None Remove="home_icon-icons.com_73532.ico" />
+    <None Remove="poll_icon_138273.ico" />
+    <None Remove="settings-cogwheel-button_icon-icons.com_72559.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="-person_90382.ico" />
+    <Resource Include="calendar_105178.ico" />
+    <Resource Include="checkform_85890.ico" />
+    <Resource Include="folder_89347.ico" />
+    <Resource Include="home_icon-icons.com_73532.ico" />
+    <Resource Include="poll_icon_138273.ico" />
+    <Resource Include="settings-cogwheel-button_icon-icons.com_72559.ico" />
   </ItemGroup>
 
 </Project>

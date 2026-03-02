@@ -22,21 +22,32 @@
          Content="MOSTRAR"
          Margin="0,15,0,15"
          HorizontalAlignment="Center" Command="{Binding GetAllCommand}" Background="#FF5AEE1E" FontWeight="Bold"/>
-        <Grid Margin="227,0,0,0" Background="White">
+        <Grid Margin="227,0,0,0" Background="White" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="550*"/>
                 <ColumnDefinition Width="23*"/>
             </Grid.ColumnDefinitions>
             <Border BorderBrush="Black" BorderThickness="1" Margin="-225,0,551,380"/>
-            <TextBlock HorizontalAlignment="Left" Margin="-206,18,0,0" TextWrapping="Wrap" Text="Inicio" VerticalAlignment="Top" Height="18" Width="93" Foreground="White" FontSize="14" FontFamily="Arial Black"/>
+            <TextBlock HorizontalAlignment="Left" Margin="-186,18,0,0" TextWrapping="Wrap" Text="Inicio" VerticalAlignment="Top" Height="18" Width="93" Foreground="White" FontSize="14" FontFamily="Arial Black"/>
 
         </Grid>
-        <control:Menucontrol HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" Width="227" Height="338"/>
-        <Label Content="Proyectos" HorizontalAlignment="Left" Margin="29,66,0,0" VerticalAlignment="Top" Width="139" Foreground="White" FontFamily="Arial Black" FontSize="14"/>
-        <Label Content="Tareas" HorizontalAlignment="Left" Margin="29,115,0,0" VerticalAlignment="Top" Width="139" FontFamily="Arial Black" Foreground="White" FontSize="14"/>
-        <Label Content="Reportes" HorizontalAlignment="Left" Margin="29,174,0,0" VerticalAlignment="Top" Width="139" FontFamily="Arial Black" FontSize="14" Foreground="White"/>
-        <Label Content="Calendario" HorizontalAlignment="Left" Margin="29,217,0,0" VerticalAlignment="Top" Width="139" FontFamily="Arial Black" Foreground="#FFFFFEFE" FontSize="14"/>
-        <Label Content="Usuario" HorizontalAlignment="Left" Margin="29,276,0,0" VerticalAlignment="Top" Width="139" FontFamily="Arial Black" FontSize="14" Foreground="White"/>
-        <Label Content="Configuracion" HorizontalAlignment="Left" Margin="29,328,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="14"/>
+        <control:Menucontrol HorizontalAlignment="Left" Margin="0,53,0,0" VerticalAlignment="Top" Width="227" Height="331"/>
+        <Label Content="Proyectos" HorizontalAlignment="Left" Margin="65,68,0,0" VerticalAlignment="Top" Width="139" Foreground="White" FontFamily="Arial Black" FontSize="14">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Label Content="Tareas" HorizontalAlignment="Left" Margin="65,117,0,0" VerticalAlignment="Top" Width="139" FontFamily="Arial Black" Foreground="White" FontSize="14"/>
+        <Label Content="Reportes" HorizontalAlignment="Left" Margin="65,176,0,0" VerticalAlignment="Top" Width="139" FontFamily="Arial Black" FontSize="14" Foreground="White"/>
+        <Label Content="Calendario" HorizontalAlignment="Left" Margin="65,219,0,0" VerticalAlignment="Top" Width="139" FontFamily="Arial Black" Foreground="#FFFFFEFE" FontSize="14"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="65,278,0,0" VerticalAlignment="Top" Width="139" FontFamily="Arial Black" FontSize="14" Foreground="White"/>
+        <Label Content="Configuracion" HorizontalAlignment="Left" Margin="65,330,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="14"/>
+        <Image HorizontalAlignment="Left" Height="26" Margin="10,10,0,0" VerticalAlignment="Top" Width="30" Source="/home_icon-icons.com_73532.ico"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="23,68,0,0" VerticalAlignment="Top" Width="31" Source="/folder_89347.ico"/>
+        <Image HorizontalAlignment="Left" Height="31" Margin="23,117,0,0" VerticalAlignment="Top" Width="33" Source="/checkform_85890.ico"/>
+        <Image HorizontalAlignment="Left" Height="26" Margin="23,176,0,0" VerticalAlignment="Top" Width="31" Source="/poll_icon_138273.ico"/>
+        <Image HorizontalAlignment="Left" Height="28" Margin="23,219,0,0" VerticalAlignment="Top" Width="34" Source="/calendar_105178.ico"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="23,278,0,0" VerticalAlignment="Top" Width="40" Source="/-person_90382.ico"/>
+        <Image HorizontalAlignment="Left" Height="26" Margin="28,330,0,0" VerticalAlignment="Top" Width="35" Source="/settings-cogwheel-button_icon-icons.com_72559.ico"/>
     </Grid>
 </Window>
